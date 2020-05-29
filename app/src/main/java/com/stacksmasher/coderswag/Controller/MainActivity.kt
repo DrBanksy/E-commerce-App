@@ -3,6 +3,7 @@ package com.stacksmasher.coderswag.Controller
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import com.stacksmasher.coderswag.Adapters.CategoryAdapter
 import com.stacksmasher.coderswag.Model.Category
 import com.stacksmasher.coderswag.R
@@ -21,5 +22,17 @@ class MainActivity : AppCompatActivity() {
 
         adapter = CategoryAdapter(this, DataService.categories)
         categoryListView.adapter = adapter
+
+
+
+
+
+
+        //setting a click listener for the list view cells, doesnt work for recycler views
+//        categoryListView.setOnItemClickListener { parent, view, position, id ->
+//            val category = DataService.categories[position]
+//            Toast.makeText(this, "you clicked on the ${category.title} cell", Toast.LENGTH_SHORT).show()
+//        }
+
     }
 }
