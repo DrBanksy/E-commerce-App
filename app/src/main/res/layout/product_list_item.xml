@@ -21,7 +21,7 @@
         app:srcCompat="@drawable/hat1" />
 
     <TextView
-        android:id="@+id/productName"
+        android:id="@+id/detailProductName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -34,7 +34,7 @@
         tools:text="Beanie" />
 
     <TextView
-        android:id="@+id/productPrice"
+        android:id="@+id/detailProductPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -42,6 +42,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/productName"
+        app:layout_constraintTop_toBottomOf="@+id/detailProductName"
         tools:text="$18" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //setting adapter
         adapter = CategoryRecycleAdapter(this, DataService.categories) {category ->
             val productIntent = Intent(this, ProductsActivity::class.java)
             productIntent.putExtra(EXTRA_CATEGORY, category.title)
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         }
         categoryListView.adapter = adapter
 
+        //setting layoutmanager
         val viewManager = LinearLayoutManager(this)
         categoryListView.layoutManager = viewManager
         //if we know each cell will have the exact same size
